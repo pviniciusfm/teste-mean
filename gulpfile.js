@@ -193,6 +193,6 @@ gulp.task('prod', function(done) {
 });
 
 // Run the project in production mode
-gulp.task('heroku:prod', function(done) {
+gulp.task('heroku:production', function(done) {
 	runSequence('build', 'lint', ['nodemon', 'watch'], done);
 });
