@@ -194,5 +194,5 @@ gulp.task('prod', function(done) {
 
 // Run the project in production mode
 gulp.task('heroku:production', function(done) {
-	runSequence('lint',['uglify','cssmin'], ['nodemon', 'watch'], done);
+	runSequence('lint',['uglify','cssmin'], done);
 });
