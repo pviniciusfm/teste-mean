@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    secure: true,
+    secure: false,
     port: process.env.PORT || 8443,
     db: 'mongodb://'+process.env.DB_USER+':'+process.env.DB_PASSWORD+'@ds045998.mongolab.com:45998/gdgbh-certificados',
     facebook: {
