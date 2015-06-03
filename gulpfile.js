@@ -191,3 +191,8 @@ gulp.task('debug', function(done) {
 gulp.task('prod', function(done) {
 	runSequence('build', 'lint', ['nodemon', 'watch'], done);
 });
+
+// Run the project in production mode
+gulp.task('heroku:prod', function(done) {
+	runSequence('build', 'lint', ['nodemon', 'watch'], done);
+});

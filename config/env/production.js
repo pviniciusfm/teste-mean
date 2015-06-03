@@ -3,7 +3,7 @@
 module.exports = {
     secure: true,
     port: process.env.PORT || 8443,
-    db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean',
+    db: 'mongodb://'+process.env.DB_USER+':'+process.env.DB_PASSWORD+'@ds045998.mongolab.com:45998/gdgbh-certificados',
     facebook: {
         clientID: process.env.FACEBOOK_ID || 'APP_ID',
         clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
